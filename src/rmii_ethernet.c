@@ -386,7 +386,7 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif)
         }
     }
 
-    netif_rmii_ethernet_mdio_write(phy_address, 0, 0x2000); // 10 Mbps, auto negeotiate disabled
+    // netif_rmii_ethernet_mdio_write(phy_address, 0, 0x2000); // 10 Mbps, auto negeotiate disabled
 
     netif_rmii_ethernet_mdio_write(phy_address, 4, 0x61);
     netif_rmii_ethernet_mdio_write(phy_address, 0, 0x1000);
